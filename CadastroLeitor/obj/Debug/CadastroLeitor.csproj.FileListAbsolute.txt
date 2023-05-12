@@ -1,0 +1,11 @@
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\bin\Debug\CadastroLeitor.exe.config
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\bin\Debug\CadastroLeitor.exe
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\bin\Debug\CadastroLeitor.pdb
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.csproj.AssemblyReference.cache
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.csproj.SuggestedBindingRedirects.cache
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.FormCadLeitor.resources
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.Properties.Resources.resources
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.csproj.GenerateResource.cache
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.csproj.CoreCompileInputs.cache
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.exe
+C:\Users\estagiario1\Documents\Movtech\Projeto 1\Movtech-Biblioteca-Leitor\CadastroLeitor\obj\Debug\CadastroLeitor.pdb

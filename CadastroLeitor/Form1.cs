@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CadastroLeitor
 {
-    public partial class Form1 : Form
+    public partial class FormCadLeitor : Form
     {
-        public Form1()
+        public FormCadLeitor()
         {
             InitializeComponent();
         }
