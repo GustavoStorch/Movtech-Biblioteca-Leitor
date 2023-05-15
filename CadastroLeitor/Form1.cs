@@ -26,17 +26,6 @@ namespace CadastroLeitor
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            /*if (string.IsNullOrEmpty(txtCodLeitor.Text) || string.IsNullOrWhiteSpace(txtCodLeitor.Text))
-            {
-                MessageBox.Show("Informe o campo do Código do leitor");
-                return;
-            }
-            else if (string.IsNullOrEmpty(txtNomeLeitor.Text) || string.IsNullOrWhiteSpace(txtNomeLeitor.Text))
-            {
-                MessageBox.Show("Informe o campo do nome do leitor");
-                return;
-            }*/
-
             try
             {
                 using (SqlConnection connection = DaoConnection.GetConexao())
