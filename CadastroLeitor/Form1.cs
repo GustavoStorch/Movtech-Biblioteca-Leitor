@@ -26,7 +26,7 @@ namespace CadastroLeitor
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtCodLeitor.Text) || string.IsNullOrWhiteSpace(txtCodLeitor.Text))
+            /*if (string.IsNullOrEmpty(txtCodLeitor.Text) || string.IsNullOrWhiteSpace(txtCodLeitor.Text))
             {
                 MessageBox.Show("Informe o campo do Código do leitor");
                 return;
@@ -35,65 +35,84 @@ namespace CadastroLeitor
             {
                 MessageBox.Show("Informe o campo do nome do leitor");
                 return;
-            }
+            }*/
 
             try
             {
                 using (SqlConnection connection = DaoConnection.GetConexao())
                 {
                     LeitorDAO dao = new LeitorDAO(connection);
-
-                    int count = dao.VerificaRegistros(new LeitorModel()
+                    bool verificaCampos = dao.VerificaCampos(new LeitorModel()
                     {
-                        CodLeitor = txtCodLeitor.Text
+                        NomeLeitor = txtNomeLeitor.Text,
+                        Sexo = txtSexoLeitor.Text,
+                        DataNascimento = txtDtNascimento.Text,
+                        Endereco = txtEnderecoLeitor.Text,
+                        EnderecoBairro = txtBairroLeitor.Text,
+                        EnderecoCidade = txtCidadeLeitor.Text,
+                        EnderecoUf = txtUfLeitor.Text
                     });
 
-                    if (count > 0)
+                    bool verificaEmail = dao.IsValidEmail(new LeitorModel()
                     {
-                        dao.Editar(new LeitorModel()
-                        {
-                            CodLeitor = txtCodLeitor.Text,
-                            NomeLeitor = txtNomeLeitor.Text,
-                            Sexo = txtSexoLeitor.Text,
-                            DataNascimento = txtDtNascimento.Text,
-                            Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
-                            Rg =  txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
-                            Email = txtEmailleitor.Text,
-                            Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
-                            TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
-                            Endereco = txtEnderecoLeitor.Text,
-                            EnderecoBairro = txtBairroLeitor.Text,  
-                            EnderecoCidade = txtCidadeLeitor.Text,
-                            EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
-                            EnderecoUf = txtUfLeitor.Text,
-                            EnderecoNumero = txtNumeroLeitor.Text,
-                        });
-                        MessageBox.Show("leitor Atualizada com sucesso!");
-                    }
-                    else
+                        Email = txtEmailleitor.Text
+                    });
+
+                    if(verificaCampos && verificaEmail)
                     {
-                        dao.Salvar(new LeitorModel()
+                        int count = dao.VerificaRegistros(new LeitorModel()
                         {
-                            NomeLeitor = txtNomeLeitor.Text,
-                            Sexo = txtSexoLeitor.Text,
-                            DataNascimento = txtDtNascimento.Text,
-                            Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
-                            Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
-                            Email = txtEmailleitor.Text,
-                            Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""),
-                            TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
-                            Endereco = txtEnderecoLeitor.Text,
-                            EnderecoBairro = txtBairroLeitor.Text,
-                            EnderecoCidade = txtCidadeLeitor.Text,
-                            EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
-                            EnderecoUf = txtUfLeitor.Text,
-                            EnderecoNumero = txtNumeroLeitor.Text,
+                            CodLeitor = txtCodLeitor.Text
                         });
-                        MessageBox.Show("leitor salva com sucesso!");
-                    }
+
+                        if (count > 0)
+                        {
+                            dao.Editar(new LeitorModel()
+                            {
+                                CodLeitor = txtCodLeitor.Text,
+                                NomeLeitor = txtNomeLeitor.Text,
+                                Sexo = txtSexoLeitor.Text,
+                                DataNascimento = txtDtNascimento.Text,
+                                Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                                Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
+                                Email = txtEmailleitor.Text,
+                                Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
+                                TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
+                                Endereco = txtEnderecoLeitor.Text,
+                                EnderecoBairro = txtBairroLeitor.Text,
+                                EnderecoCidade = txtCidadeLeitor.Text,
+                                EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
+                                EnderecoUf = txtUfLeitor.Text,
+                                EnderecoNumero = txtNumeroLeitor.Text,
+                            });
+                            MessageBox.Show("leitor Atualizada com sucesso!");
+                            limparForm();
+                        }
+                        else
+                        {
+                            dao.Salvar(new LeitorModel()
+                            {
+                                NomeLeitor = txtNomeLeitor.Text,
+                                Sexo = txtSexoLeitor.Text,
+                                DataNascimento = txtDtNascimento.Text,
+                                Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                                Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
+                                Email = txtEmailleitor.Text,
+                                Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""),
+                                TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
+                                Endereco = txtEnderecoLeitor.Text,
+                                EnderecoBairro = txtBairroLeitor.Text,
+                                EnderecoCidade = txtCidadeLeitor.Text,
+                                EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
+                                EnderecoUf = txtUfLeitor.Text,
+                                EnderecoNumero = txtNumeroLeitor.Text,
+                            });
+                            MessageBox.Show("leitor salva com sucesso!");
+                            limparForm();
+                        }
+                    }   
                 }
                 InitializeTable();
-                limparForm();
                 CarregaID();
                 btnExcluir.Enabled = false;
             }

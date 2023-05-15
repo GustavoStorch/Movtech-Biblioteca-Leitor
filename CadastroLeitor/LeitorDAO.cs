@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CadastroLeitor
 {
@@ -110,6 +111,61 @@ namespace CadastroLeitor
                 command.Parameters.Add(new SqlParameter("@codLeitor", leitor.CodLeitor));
                 command.ExecuteNonQuery();
             }
+        }
+
+        public bool IsValidEmail(LeitorModel leitor)
+        {
+            try
+            {
+                var email = new System.Net.Mail.MailAddress(leitor.Email);
+                return email.Address == leitor.Email;
+            }
+            catch
+            {
+                MessageBox.Show("Formato de e-mail inválido!");
+                return false;
+            }
+        }
+
+        public bool VerificaCampos(LeitorModel leitor)
+        {
+            if (string.IsNullOrEmpty(leitor.NomeLeitor) || string.IsNullOrWhiteSpace(leitor.NomeLeitor))
+            {
+                MessageBox.Show("Informe o campo do nome do leitor");
+                return false;
+            }
+             else if (string.IsNullOrEmpty(leitor.Sexo) || string.IsNullOrWhiteSpace(leitor.Sexo))
+            {
+                MessageBox.Show("Informe o campo do Sexo do leitor");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(leitor.DataNascimento) || string.IsNullOrWhiteSpace(leitor.DataNascimento))
+            {
+                MessageBox.Show("Informe o campo da Data de Nascimento do leitor");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(leitor.Endereco) || string.IsNullOrWhiteSpace(leitor.Endereco))
+            {
+                MessageBox.Show("Informe o campo do Endereco do leitor");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(leitor.EnderecoBairro) || string.IsNullOrWhiteSpace(leitor.EnderecoBairro))
+            {
+                MessageBox.Show("Informe o campo do bairro do leitor");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(leitor.EnderecoCidade) || string.IsNullOrWhiteSpace(leitor.EnderecoCidade))
+            {
+                MessageBox.Show("Informe o campo da cidade do leitor");
+                return false;
+            }
+            else if (string.IsNullOrEmpty(leitor.EnderecoUf) || string.IsNullOrWhiteSpace(leitor.EnderecoUf))
+            {
+                MessageBox.Show("Informe o campo do UF do leitor");
+                return false;
+            }
+
+            return true;
         }
 
         public int VerificaRegistros(LeitorModel leitor)
