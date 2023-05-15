@@ -131,7 +131,8 @@ namespace CadastroLeitor
             using (SqlCommand command = Connection.CreateCommand())
             {
                 StringBuilder sql = new StringBuilder();
-                sql.AppendLine("SELECT LEI.codLeitor, LEI.nomeLeitor, LEI.cpf FROM mvtBibLeitor LEI ORDER BY LEI.codLeitor");
+                sql.AppendLine("SELECT codLeitor, nomeLeitor, sexo, dataNascimento, cpf, rg, email, telefone, telefoneCelular, endereco, ");
+                sql.AppendLine("enderecoBairro, enderecoCidade, enderecoCep, enderecoUf, enderecoNumero FROM mvtBibLeitor ORDER BY codLeitor");
                 command.CommandText = sql.ToString();
                 using (SqlDataReader dr = command.ExecuteReader())
                 {
@@ -148,7 +149,19 @@ namespace CadastroLeitor
         {
             string codLeitor = "";
             string nomeLeitor = "";
+            string sexo = "";
+            string dataNascimento = "";
             string cpf = "";
+            string rg = "";
+            string email = "";
+            string telefone = "";
+            string telefoneCelular = "";
+            string endereco = "";
+            string enderecoBairro = "";
+            string enderecoCidade = "";
+            string enderecoCep = "";
+            string enderecoUf = "";
+            string enderecoNumero = "";
 
             if (DBNull.Value != dr["codLeitor"])
             {
@@ -162,11 +175,72 @@ namespace CadastroLeitor
             {
                 cpf = dr["cpf"] + "";
             }
+            if (DBNull.Value != dr["sexo"])
+            {
+                sexo = dr["sexo"] + "";
+            }
+            if (DBNull.Value != dr["dataNascimento"])
+            {
+                dataNascimento = dr["dataNascimento"] + "";
+            }
+            if (DBNull.Value != dr["rg"])
+            {
+                rg = dr["rg"] + "";
+            }
+            if (DBNull.Value != dr["email"])
+            {
+                email = dr["email"] + "";
+            }
+            if (DBNull.Value != dr["telefone"])
+            {
+                telefone = dr["telefone"] + "";
+            }
+            if (DBNull.Value != dr["telefoneCelular"])
+            {
+                telefoneCelular = dr["telefoneCelular"] + "";
+            }
+            if (DBNull.Value != dr["endereco"])
+            {
+                endereco = dr["endereco"] + "";
+            }
+            if (DBNull.Value != dr["enderecoBairro"])
+            {
+                enderecoBairro = dr["enderecoBairro"] + "";
+            }
+            if (DBNull.Value != dr["enderecoCidade"])
+            {
+                enderecoCidade = dr["enderecoCidade"] + "";
+            }
+            if (DBNull.Value != dr["enderecoCep"])
+            {
+                enderecoCep = dr["enderecoCep"] + "";
+            }
+            if (DBNull.Value != dr["enderecoUf"])
+            {
+                enderecoUf = dr["enderecoUf"] + "";
+            }
+            if (DBNull.Value != dr["enderecoNumero"])
+            {
+                enderecoNumero = dr["enderecoNumero"] + "";
+            }
+
             return new LeitorModel()
             {
                 CodLeitor = codLeitor,
                 NomeLeitor = nomeLeitor,
-                Cpf = cpf
+                Cpf = cpf,
+                Sexo = sexo,
+                DataNascimento = dataNascimento,
+                Rg = rg,
+                Email = email,
+                Telefone = telefone,
+                TelefoneCelular = telefoneCelular,
+                Endereco = endereco,
+                EnderecoBairro = enderecoBairro,
+                EnderecoCidade = enderecoCidade,
+                EnderecoCep = enderecoCep,
+                EnderecoUf = enderecoUf,
+                EnderecoNumero = enderecoNumero
             };
         }
     }

@@ -65,239 +65,227 @@
             this.colCodigoLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNomeLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCpfLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSexoLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDtNascimentoLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRgLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmailLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colTelefoneLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colCelularLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colEnderecoLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colBairroLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colCidadeLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colCepLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colUfLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.colNumeroLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDadosLeitor)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodLeitor
             // 
             this.lblCodLeitor.AutoSize = true;
-            this.lblCodLeitor.Location = new System.Drawing.Point(8, 8);
-            this.lblCodLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodLeitor.Location = new System.Drawing.Point(12, 12);
             this.lblCodLeitor.Name = "lblCodLeitor";
-            this.lblCodLeitor.Size = new System.Drawing.Size(43, 13);
+            this.lblCodLeitor.Size = new System.Drawing.Size(63, 20);
             this.lblCodLeitor.TabIndex = 0;
             this.lblCodLeitor.Text = "Código:";
             // 
             // lblNomeLeitor
             // 
             this.lblNomeLeitor.AutoSize = true;
-            this.lblNomeLeitor.Location = new System.Drawing.Point(8, 29);
-            this.lblNomeLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNomeLeitor.Location = new System.Drawing.Point(12, 45);
             this.lblNomeLeitor.Name = "lblNomeLeitor";
-            this.lblNomeLeitor.Size = new System.Drawing.Size(38, 13);
+            this.lblNomeLeitor.Size = new System.Drawing.Size(55, 20);
             this.lblNomeLeitor.TabIndex = 1;
             this.lblNomeLeitor.Text = "Nome:";
             // 
             // lblDtNascimentoLeitor
             // 
             this.lblDtNascimentoLeitor.AutoSize = true;
-            this.lblDtNascimentoLeitor.Location = new System.Drawing.Point(8, 70);
-            this.lblDtNascimentoLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDtNascimentoLeitor.Location = new System.Drawing.Point(12, 108);
             this.lblDtNascimentoLeitor.Name = "lblDtNascimentoLeitor";
-            this.lblDtNascimentoLeitor.Size = new System.Drawing.Size(92, 13);
+            this.lblDtNascimentoLeitor.Size = new System.Drawing.Size(136, 20);
             this.lblDtNascimentoLeitor.TabIndex = 3;
             this.lblDtNascimentoLeitor.Text = "Data Nascimento:";
             // 
             // lblSexoLeitor
             // 
             this.lblSexoLeitor.AutoSize = true;
-            this.lblSexoLeitor.Location = new System.Drawing.Point(8, 49);
-            this.lblSexoLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSexoLeitor.Location = new System.Drawing.Point(12, 75);
             this.lblSexoLeitor.Name = "lblSexoLeitor";
-            this.lblSexoLeitor.Size = new System.Drawing.Size(34, 13);
+            this.lblSexoLeitor.Size = new System.Drawing.Size(49, 20);
             this.lblSexoLeitor.TabIndex = 2;
             this.lblSexoLeitor.Text = "Sexo:";
             // 
             // lblRgLeitor
             // 
             this.lblRgLeitor.AutoSize = true;
-            this.lblRgLeitor.Location = new System.Drawing.Point(8, 112);
-            this.lblRgLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRgLeitor.Location = new System.Drawing.Point(12, 172);
             this.lblRgLeitor.Name = "lblRgLeitor";
-            this.lblRgLeitor.Size = new System.Drawing.Size(26, 13);
+            this.lblRgLeitor.Size = new System.Drawing.Size(38, 20);
             this.lblRgLeitor.TabIndex = 5;
             this.lblRgLeitor.Text = "RG:";
             // 
             // lblCpfLeitor
             // 
             this.lblCpfLeitor.AutoSize = true;
-            this.lblCpfLeitor.Location = new System.Drawing.Point(8, 91);
-            this.lblCpfLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCpfLeitor.Location = new System.Drawing.Point(12, 140);
             this.lblCpfLeitor.Name = "lblCpfLeitor";
-            this.lblCpfLeitor.Size = new System.Drawing.Size(30, 13);
+            this.lblCpfLeitor.Size = new System.Drawing.Size(44, 20);
             this.lblCpfLeitor.TabIndex = 4;
             this.lblCpfLeitor.Text = "CPF:";
             // 
             // lblTelefoneLeitor
             // 
             this.lblTelefoneLeitor.AutoSize = true;
-            this.lblTelefoneLeitor.Location = new System.Drawing.Point(8, 153);
-            this.lblTelefoneLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTelefoneLeitor.Location = new System.Drawing.Point(12, 235);
             this.lblTelefoneLeitor.Name = "lblTelefoneLeitor";
-            this.lblTelefoneLeitor.Size = new System.Drawing.Size(52, 13);
+            this.lblTelefoneLeitor.Size = new System.Drawing.Size(75, 20);
             this.lblTelefoneLeitor.TabIndex = 7;
             this.lblTelefoneLeitor.Text = "Telefone:";
             // 
             // lblEmailLeitor
             // 
             this.lblEmailLeitor.AutoSize = true;
-            this.lblEmailLeitor.Location = new System.Drawing.Point(8, 133);
-            this.lblEmailLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmailLeitor.Location = new System.Drawing.Point(12, 205);
             this.lblEmailLeitor.Name = "lblEmailLeitor";
-            this.lblEmailLeitor.Size = new System.Drawing.Size(38, 13);
+            this.lblEmailLeitor.Size = new System.Drawing.Size(57, 20);
             this.lblEmailLeitor.TabIndex = 6;
             this.lblEmailLeitor.Text = "E-mail:";
             // 
             // lblEnderecoLeitor
             // 
             this.lblEnderecoLeitor.AutoSize = true;
-            this.lblEnderecoLeitor.Location = new System.Drawing.Point(8, 195);
-            this.lblEnderecoLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEnderecoLeitor.Location = new System.Drawing.Point(12, 300);
             this.lblEnderecoLeitor.Name = "lblEnderecoLeitor";
-            this.lblEnderecoLeitor.Size = new System.Drawing.Size(56, 13);
+            this.lblEnderecoLeitor.Size = new System.Drawing.Size(82, 20);
             this.lblEnderecoLeitor.TabIndex = 9;
             this.lblEnderecoLeitor.Text = "Endereço:";
             // 
             // lblCelularLeitor
             // 
             this.lblCelularLeitor.AutoSize = true;
-            this.lblCelularLeitor.Location = new System.Drawing.Point(8, 174);
-            this.lblCelularLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCelularLeitor.Location = new System.Drawing.Point(12, 268);
             this.lblCelularLeitor.Name = "lblCelularLeitor";
-            this.lblCelularLeitor.Size = new System.Drawing.Size(42, 13);
+            this.lblCelularLeitor.Size = new System.Drawing.Size(62, 20);
             this.lblCelularLeitor.TabIndex = 8;
             this.lblCelularLeitor.Text = "Celular:";
             // 
             // lblCidadeLeitor
             // 
             this.lblCidadeLeitor.AutoSize = true;
-            this.lblCidadeLeitor.Location = new System.Drawing.Point(8, 237);
-            this.lblCidadeLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCidadeLeitor.Location = new System.Drawing.Point(12, 365);
             this.lblCidadeLeitor.Name = "lblCidadeLeitor";
-            this.lblCidadeLeitor.Size = new System.Drawing.Size(43, 13);
+            this.lblCidadeLeitor.Size = new System.Drawing.Size(63, 20);
             this.lblCidadeLeitor.TabIndex = 11;
             this.lblCidadeLeitor.Text = "Cidade:";
             // 
             // lblBairroLeitor
             // 
             this.lblBairroLeitor.AutoSize = true;
-            this.lblBairroLeitor.Location = new System.Drawing.Point(8, 216);
-            this.lblBairroLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBairroLeitor.Location = new System.Drawing.Point(12, 332);
             this.lblBairroLeitor.Name = "lblBairroLeitor";
-            this.lblBairroLeitor.Size = new System.Drawing.Size(37, 13);
+            this.lblBairroLeitor.Size = new System.Drawing.Size(55, 20);
             this.lblBairroLeitor.TabIndex = 10;
             this.lblBairroLeitor.Text = "Bairro:";
             // 
             // lblCepLeitor
             // 
             this.lblCepLeitor.AutoSize = true;
-            this.lblCepLeitor.Location = new System.Drawing.Point(8, 257);
-            this.lblCepLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCepLeitor.Location = new System.Drawing.Point(12, 395);
             this.lblCepLeitor.Name = "lblCepLeitor";
-            this.lblCepLeitor.Size = new System.Drawing.Size(31, 13);
+            this.lblCepLeitor.Size = new System.Drawing.Size(45, 20);
             this.lblCepLeitor.TabIndex = 12;
             this.lblCepLeitor.Text = "CEP:";
             // 
             // lblNumeroLeitor
             // 
             this.lblNumeroLeitor.AutoSize = true;
-            this.lblNumeroLeitor.Location = new System.Drawing.Point(8, 299);
-            this.lblNumeroLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNumeroLeitor.Location = new System.Drawing.Point(12, 460);
             this.lblNumeroLeitor.Name = "lblNumeroLeitor";
-            this.lblNumeroLeitor.Size = new System.Drawing.Size(47, 13);
+            this.lblNumeroLeitor.Size = new System.Drawing.Size(69, 20);
             this.lblNumeroLeitor.TabIndex = 15;
             this.lblNumeroLeitor.Text = "Numero:";
             // 
             // lblUfLeitor
             // 
             this.lblUfLeitor.AutoSize = true;
-            this.lblUfLeitor.Location = new System.Drawing.Point(8, 278);
-            this.lblUfLeitor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUfLeitor.Location = new System.Drawing.Point(12, 428);
             this.lblUfLeitor.Name = "lblUfLeitor";
-            this.lblUfLeitor.Size = new System.Drawing.Size(24, 13);
+            this.lblUfLeitor.Size = new System.Drawing.Size(35, 20);
             this.lblUfLeitor.TabIndex = 16;
             this.lblUfLeitor.Text = "UF:";
             // 
             // txtCodLeitor
             // 
             this.txtCodLeitor.Enabled = false;
-            this.txtCodLeitor.Location = new System.Drawing.Point(104, 6);
-            this.txtCodLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodLeitor.Location = new System.Drawing.Point(156, 9);
             this.txtCodLeitor.MaxLength = 3;
             this.txtCodLeitor.Name = "txtCodLeitor";
-            this.txtCodLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtCodLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtCodLeitor.TabIndex = 17;
             // 
             // txtNomeLeitor
             // 
-            this.txtNomeLeitor.Location = new System.Drawing.Point(104, 27);
-            this.txtNomeLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeLeitor.Location = new System.Drawing.Point(156, 42);
             this.txtNomeLeitor.MaxLength = 200;
             this.txtNomeLeitor.Name = "txtNomeLeitor";
-            this.txtNomeLeitor.Size = new System.Drawing.Size(526, 20);
+            this.txtNomeLeitor.Size = new System.Drawing.Size(787, 26);
             this.txtNomeLeitor.TabIndex = 18;
             // 
             // txtSexoLeitor
             // 
-            this.txtSexoLeitor.Location = new System.Drawing.Point(104, 47);
-            this.txtSexoLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSexoLeitor.Location = new System.Drawing.Point(156, 72);
             this.txtSexoLeitor.MaxLength = 1;
             this.txtSexoLeitor.Name = "txtSexoLeitor";
-            this.txtSexoLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtSexoLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtSexoLeitor.TabIndex = 19;
             // 
             // txtCidadeLeitor
             // 
-            this.txtCidadeLeitor.Location = new System.Drawing.Point(104, 235);
-            this.txtCidadeLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCidadeLeitor.Location = new System.Drawing.Point(156, 362);
             this.txtCidadeLeitor.MaxLength = 100;
             this.txtCidadeLeitor.Name = "txtCidadeLeitor";
-            this.txtCidadeLeitor.Size = new System.Drawing.Size(303, 20);
+            this.txtCidadeLeitor.Size = new System.Drawing.Size(452, 26);
             this.txtCidadeLeitor.TabIndex = 28;
             // 
             // txtBairroLeitor
             // 
-            this.txtBairroLeitor.Location = new System.Drawing.Point(104, 214);
-            this.txtBairroLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBairroLeitor.Location = new System.Drawing.Point(156, 329);
             this.txtBairroLeitor.MaxLength = 100;
             this.txtBairroLeitor.Name = "txtBairroLeitor";
-            this.txtBairroLeitor.Size = new System.Drawing.Size(303, 20);
+            this.txtBairroLeitor.Size = new System.Drawing.Size(452, 26);
             this.txtBairroLeitor.TabIndex = 27;
             // 
             // txtEnderecoLeitor
             // 
-            this.txtEnderecoLeitor.Location = new System.Drawing.Point(104, 193);
-            this.txtEnderecoLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEnderecoLeitor.Location = new System.Drawing.Point(156, 297);
             this.txtEnderecoLeitor.MaxLength = 200;
             this.txtEnderecoLeitor.Name = "txtEnderecoLeitor";
-            this.txtEnderecoLeitor.Size = new System.Drawing.Size(526, 20);
+            this.txtEnderecoLeitor.Size = new System.Drawing.Size(787, 26);
             this.txtEnderecoLeitor.TabIndex = 26;
             // 
             // txtNumeroLeitor
             // 
-            this.txtNumeroLeitor.Location = new System.Drawing.Point(104, 297);
-            this.txtNumeroLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroLeitor.Location = new System.Drawing.Point(156, 457);
             this.txtNumeroLeitor.MaxLength = 10;
             this.txtNumeroLeitor.Name = "txtNumeroLeitor";
-            this.txtNumeroLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtNumeroLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtNumeroLeitor.TabIndex = 31;
             // 
             // txtUfLeitor
             // 
-            this.txtUfLeitor.Location = new System.Drawing.Point(104, 276);
-            this.txtUfLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUfLeitor.Location = new System.Drawing.Point(156, 425);
             this.txtUfLeitor.MaxLength = 2;
             this.txtUfLeitor.Name = "txtUfLeitor";
-            this.txtUfLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtUfLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtUfLeitor.TabIndex = 30;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvar.Location = new System.Drawing.Point(470, 318);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalvar.Location = new System.Drawing.Point(705, 489);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(77, 22);
+            this.btnSalvar.Size = new System.Drawing.Size(116, 34);
             this.btnSalvar.TabIndex = 32;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -306,10 +294,9 @@
             // btnExcluir
             // 
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.Location = new System.Drawing.Point(551, 318);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExcluir.Location = new System.Drawing.Point(826, 489);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(77, 22);
+            this.btnExcluir.Size = new System.Drawing.Size(116, 34);
             this.btnExcluir.TabIndex = 33;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -327,106 +314,209 @@
             this.dtgDadosLeitor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodigoLeitor,
             this.colNomeLeitor,
-            this.colCpfLeitor});
-            this.dtgDadosLeitor.Location = new System.Drawing.Point(11, 344);
-            this.dtgDadosLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.colCpfLeitor,
+            this.colSexoLeitor,
+            this.colDtNascimentoLeitor,
+            this.colRgLeitor,
+            this.colEmailLeitor,
+            this.colTelefoneLeitor,
+            this.colCelularLeitor,
+            this.colEnderecoLeitor,
+            this.colBairroLeitor,
+            this.colCidadeLeitor,
+            this.colCepLeitor,
+            this.colUfLeitor,
+            this.colNumeroLeitor});
+            this.dtgDadosLeitor.Location = new System.Drawing.Point(16, 529);
             this.dtgDadosLeitor.Name = "dtgDadosLeitor";
             this.dtgDadosLeitor.ReadOnly = true;
             this.dtgDadosLeitor.RowHeadersWidth = 62;
             this.dtgDadosLeitor.RowTemplate.Height = 28;
             this.dtgDadosLeitor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDadosLeitor.Size = new System.Drawing.Size(618, 197);
+            this.dtgDadosLeitor.Size = new System.Drawing.Size(927, 323);
             this.dtgDadosLeitor.TabIndex = 34;
             this.dtgDadosLeitor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDadosLeitor_CellDoubleClick);
             // 
             // txtDtNascimento
             // 
-            this.txtDtNascimento.Location = new System.Drawing.Point(104, 68);
-            this.txtDtNascimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDtNascimento.Location = new System.Drawing.Point(156, 105);
             this.txtDtNascimento.Mask = "00/00/0000";
             this.txtDtNascimento.Name = "txtDtNascimento";
-            this.txtDtNascimento.Size = new System.Drawing.Size(199, 20);
+            this.txtDtNascimento.Size = new System.Drawing.Size(296, 26);
             this.txtDtNascimento.TabIndex = 35;
             this.txtDtNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // txtCpfLeitor
             // 
-            this.txtCpfLeitor.Location = new System.Drawing.Point(104, 89);
-            this.txtCpfLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCpfLeitor.Location = new System.Drawing.Point(156, 137);
             this.txtCpfLeitor.Mask = "000.000.000-00";
             this.txtCpfLeitor.Name = "txtCpfLeitor";
-            this.txtCpfLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtCpfLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtCpfLeitor.TabIndex = 36;
             // 
             // txtRgLeitor
             // 
-            this.txtRgLeitor.Location = new System.Drawing.Point(104, 110);
-            this.txtRgLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRgLeitor.Location = new System.Drawing.Point(156, 169);
             this.txtRgLeitor.Mask = "00.000.000-0";
             this.txtRgLeitor.Name = "txtRgLeitor";
-            this.txtRgLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtRgLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtRgLeitor.TabIndex = 37;
             // 
             // txtEmailleitor
             // 
-            this.txtEmailleitor.Location = new System.Drawing.Point(104, 131);
-            this.txtEmailleitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmailleitor.Location = new System.Drawing.Point(156, 202);
             this.txtEmailleitor.MaxLength = 200;
             this.txtEmailleitor.Name = "txtEmailleitor";
-            this.txtEmailleitor.Size = new System.Drawing.Size(526, 20);
+            this.txtEmailleitor.Size = new System.Drawing.Size(787, 26);
             this.txtEmailleitor.TabIndex = 38;
             // 
             // txtTelefoneLeitor
             // 
-            this.txtTelefoneLeitor.Location = new System.Drawing.Point(104, 151);
-            this.txtTelefoneLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefoneLeitor.Location = new System.Drawing.Point(156, 232);
             this.txtTelefoneLeitor.Mask = "(00) 0000-0000";
             this.txtTelefoneLeitor.Name = "txtTelefoneLeitor";
-            this.txtTelefoneLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtTelefoneLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtTelefoneLeitor.TabIndex = 39;
             // 
             // txtCelularLeitor
             // 
-            this.txtCelularLeitor.Location = new System.Drawing.Point(104, 172);
-            this.txtCelularLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCelularLeitor.Location = new System.Drawing.Point(156, 265);
             this.txtCelularLeitor.Mask = "(00) 00000-0000";
             this.txtCelularLeitor.Name = "txtCelularLeitor";
-            this.txtCelularLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtCelularLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtCelularLeitor.TabIndex = 40;
             // 
             // txtCepLeitor
             // 
-            this.txtCepLeitor.Location = new System.Drawing.Point(104, 255);
-            this.txtCepLeitor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCepLeitor.Location = new System.Drawing.Point(156, 392);
             this.txtCepLeitor.Mask = "00000-000";
             this.txtCepLeitor.Name = "txtCepLeitor";
-            this.txtCepLeitor.Size = new System.Drawing.Size(199, 20);
+            this.txtCepLeitor.Size = new System.Drawing.Size(296, 26);
             this.txtCepLeitor.TabIndex = 41;
             // 
             // colCodigoLeitor
             // 
             this.colCodigoLeitor.HeaderText = "Código";
+            this.colCodigoLeitor.MinimumWidth = 8;
             this.colCodigoLeitor.Name = "colCodigoLeitor";
             this.colCodigoLeitor.ReadOnly = true;
             // 
             // colNomeLeitor
             // 
             this.colNomeLeitor.HeaderText = "Leitor";
+            this.colNomeLeitor.MinimumWidth = 8;
             this.colNomeLeitor.Name = "colNomeLeitor";
             this.colNomeLeitor.ReadOnly = true;
             // 
             // colCpfLeitor
             // 
             this.colCpfLeitor.HeaderText = "CPF";
+            this.colCpfLeitor.MinimumWidth = 8;
             this.colCpfLeitor.Name = "colCpfLeitor";
             this.colCpfLeitor.ReadOnly = true;
+            // 
+            // colSexoLeitor
+            // 
+            this.colSexoLeitor.HeaderText = "Sexo";
+            this.colSexoLeitor.MinimumWidth = 8;
+            this.colSexoLeitor.Name = "colSexoLeitor";
+            this.colSexoLeitor.ReadOnly = true;
+            this.colSexoLeitor.Visible = false;
+            // 
+            // colDtNascimentoLeitor
+            // 
+            this.colDtNascimentoLeitor.HeaderText = "Data.Nascimento";
+            this.colDtNascimentoLeitor.MinimumWidth = 8;
+            this.colDtNascimentoLeitor.Name = "colDtNascimentoLeitor";
+            this.colDtNascimentoLeitor.ReadOnly = true;
+            this.colDtNascimentoLeitor.Visible = false;
+            // 
+            // colRgLeitor
+            // 
+            this.colRgLeitor.HeaderText = "RG";
+            this.colRgLeitor.MinimumWidth = 8;
+            this.colRgLeitor.Name = "colRgLeitor";
+            this.colRgLeitor.ReadOnly = true;
+            this.colRgLeitor.Visible = false;
+            // 
+            // colEmailLeitor
+            // 
+            this.colEmailLeitor.HeaderText = "E-mail";
+            this.colEmailLeitor.MinimumWidth = 8;
+            this.colEmailLeitor.Name = "colEmailLeitor";
+            this.colEmailLeitor.ReadOnly = true;
+            this.colEmailLeitor.Visible = false;
+            // 
+            // colTelefoneLeitor
+            // 
+            this.colTelefoneLeitor.HeaderText = "Telefone";
+            this.colTelefoneLeitor.MinimumWidth = 8;
+            this.colTelefoneLeitor.Name = "colTelefoneLeitor";
+            this.colTelefoneLeitor.ReadOnly = true;
+            this.colTelefoneLeitor.Visible = false;
+            // 
+            // colCelularLeitor
+            // 
+            this.colCelularLeitor.HeaderText = "Celular";
+            this.colCelularLeitor.MinimumWidth = 8;
+            this.colCelularLeitor.Name = "colCelularLeitor";
+            this.colCelularLeitor.ReadOnly = true;
+            this.colCelularLeitor.Visible = false;
+            // 
+            // colEnderecoLeitor
+            // 
+            this.colEnderecoLeitor.HeaderText = "Endereço";
+            this.colEnderecoLeitor.MinimumWidth = 8;
+            this.colEnderecoLeitor.Name = "colEnderecoLeitor";
+            this.colEnderecoLeitor.ReadOnly = true;
+            this.colEnderecoLeitor.Visible = false;
+            // 
+            // colBairroLeitor
+            // 
+            this.colBairroLeitor.HeaderText = "Bairro";
+            this.colBairroLeitor.MinimumWidth = 8;
+            this.colBairroLeitor.Name = "colBairroLeitor";
+            this.colBairroLeitor.ReadOnly = true;
+            this.colBairroLeitor.Visible = false;
+            // 
+            // colCidadeLeitor
+            // 
+            this.colCidadeLeitor.HeaderText = "Cidade";
+            this.colCidadeLeitor.MinimumWidth = 8;
+            this.colCidadeLeitor.Name = "colCidadeLeitor";
+            this.colCidadeLeitor.ReadOnly = true;
+            this.colCidadeLeitor.Visible = false;
+            // 
+            // colCepLeitor
+            // 
+            this.colCepLeitor.HeaderText = "CEP";
+            this.colCepLeitor.MinimumWidth = 8;
+            this.colCepLeitor.Name = "colCepLeitor";
+            this.colCepLeitor.ReadOnly = true;
+            this.colCepLeitor.Visible = false;
+            // 
+            // colUfLeitor
+            // 
+            this.colUfLeitor.HeaderText = "UF";
+            this.colUfLeitor.MinimumWidth = 8;
+            this.colUfLeitor.Name = "colUfLeitor";
+            this.colUfLeitor.ReadOnly = true;
+            this.colUfLeitor.Visible = false;
+            // 
+            // colNumeroLeitor
+            // 
+            this.colNumeroLeitor.HeaderText = "Número";
+            this.colNumeroLeitor.MinimumWidth = 8;
+            this.colNumeroLeitor.Name = "colNumeroLeitor";
+            this.colNumeroLeitor.ReadOnly = true;
+            this.colNumeroLeitor.Visible = false;
             // 
             // FormCadLeitor
             // 
             this.AcceptButton = this.btnSalvar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 487);
+            this.ClientSize = new System.Drawing.Size(956, 864);
             this.Controls.Add(this.txtCepLeitor);
             this.Controls.Add(this.txtCelularLeitor);
             this.Controls.Add(this.txtTelefoneLeitor);
@@ -460,7 +550,6 @@
             this.Controls.Add(this.lblSexoLeitor);
             this.Controls.Add(this.lblNomeLeitor);
             this.Controls.Add(this.lblCodLeitor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormCadLeitor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Leitor";
@@ -510,6 +599,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodigoLeitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomeLeitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCpfLeitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSexoLeitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDtNascimentoLeitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRgLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colEmailLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colTelefoneLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colCelularLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colEnderecoLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colBairroLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colCidadeLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colCepLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colUfLeitor;
+        private System.Windows.Forms.DataGridViewLinkColumn colNumeroLeitor;
     }
 }
 

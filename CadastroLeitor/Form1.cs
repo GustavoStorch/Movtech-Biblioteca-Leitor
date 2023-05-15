@@ -56,15 +56,15 @@ namespace CadastroLeitor
                             NomeLeitor = txtNomeLeitor.Text,
                             Sexo = txtSexoLeitor.Text,
                             DataNascimento = txtDtNascimento.Text,
-                            Cpf = txtCpfLeitor.Text,
-                            Rg =  txtRgLeitor.Text,
+                            Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                            Rg =  txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
                             Email = txtEmailleitor.Text,
-                            Telefone = txtTelefoneLeitor.Text,
-                            TelefoneCelular = txtCelularLeitor.Text,
+                            Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
+                            TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
                             Endereco = txtEnderecoLeitor.Text,
                             EnderecoBairro = txtBairroLeitor.Text,  
                             EnderecoCidade = txtCidadeLeitor.Text,
-                            EnderecoCep = txtCepLeitor.Text,
+                            EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
                             EnderecoUf = txtUfLeitor.Text,
                             EnderecoNumero = txtNumeroLeitor.Text,
                         });
@@ -77,15 +77,15 @@ namespace CadastroLeitor
                             NomeLeitor = txtNomeLeitor.Text,
                             Sexo = txtSexoLeitor.Text,
                             DataNascimento = txtDtNascimento.Text,
-                            Cpf = txtCpfLeitor.Text,
-                            Rg = txtRgLeitor.Text,
+                            Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                            Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
                             Email = txtEmailleitor.Text,
-                            Telefone = txtTelefoneLeitor.Text,
-                            TelefoneCelular = txtCelularLeitor.Text,
+                            Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""),
+                            TelefoneCelular = txtCelularLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
                             Endereco = txtEnderecoLeitor.Text,
                             EnderecoBairro = txtBairroLeitor.Text,
                             EnderecoCidade = txtCidadeLeitor.Text,
-                            EnderecoCep = txtCepLeitor.Text,
+                            EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
                             EnderecoUf = txtUfLeitor.Text,
                             EnderecoNumero = txtNumeroLeitor.Text,
                         });
@@ -170,6 +170,18 @@ namespace CadastroLeitor
                     row.Cells[colCodigoLeitor.Index].Value = leitor.CodLeitor;
                     row.Cells[colNomeLeitor.Index].Value = leitor.NomeLeitor;
                     row.Cells[colCpfLeitor.Index].Value = leitor.Cpf;
+                    row.Cells[colSexoLeitor.Index].Value = leitor.Sexo;
+                    row.Cells[colDtNascimentoLeitor.Index].Value = leitor.DataNascimento;
+                    row.Cells[colRgLeitor.Index].Value = leitor.Rg;
+                    row.Cells[colEmailLeitor.Index].Value = leitor.Email;
+                    row.Cells[colTelefoneLeitor.Index].Value = leitor.Telefone;
+                    row.Cells[colCelularLeitor.Index].Value = leitor.TelefoneCelular;
+                    row.Cells[colEnderecoLeitor.Index].Value = leitor.Endereco;
+                    row.Cells[colBairroLeitor.Index].Value = leitor.EnderecoBairro;
+                    row.Cells[colCidadeLeitor.Index].Value = leitor.EnderecoCidade;
+                    row.Cells[colCepLeitor.Index].Value = leitor.EnderecoCep;
+                    row.Cells[colUfLeitor.Index].Value = leitor.EnderecoUf;
+                    row.Cells[colNumeroLeitor.Index].Value = leitor.EnderecoNumero;
                 }
             }
         }
@@ -192,7 +204,18 @@ namespace CadastroLeitor
                 txtCodLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCodigoLeitor.Index].Value + "";
                 txtNomeLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colNomeLeitor.Index].Value + "";
                 txtCpfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCpfLeitor.Index].Value + "";
-
+                txtSexoLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colSexoLeitor.Index].Value + "";
+                txtDtNascimento.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colDtNascimentoLeitor.Index].Value + "";
+                txtRgLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colRgLeitor.Index].Value + "";
+                txtEmailleitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colEmailLeitor.Index].Value + "";
+                txtTelefoneLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colTelefoneLeitor.Index].Value + "";
+                txtCelularLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCelularLeitor.Index].Value + "";
+                txtEnderecoLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colEnderecoLeitor.Index].Value + "";
+                txtBairroLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colBairroLeitor.Index].Value + "";
+                txtCidadeLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCidadeLeitor.Index].Value + "";
+                txtCepLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCepLeitor.Index].Value + "";
+                txtUfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colUfLeitor.Index].Value + "";
+                txtNumeroLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colNumeroLeitor.Index].Value + "";
                 if (string.IsNullOrEmpty(this.txtNomeLeitor.Text))
                 {
                     btnExcluir.Enabled = false;
