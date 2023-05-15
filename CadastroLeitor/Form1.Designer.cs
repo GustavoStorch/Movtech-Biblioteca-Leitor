@@ -46,7 +46,6 @@
             this.lblUfLeitor = new System.Windows.Forms.Label();
             this.txtCodLeitor = new System.Windows.Forms.TextBox();
             this.txtNomeLeitor = new System.Windows.Forms.TextBox();
-            this.txtSexoLeitor = new System.Windows.Forms.TextBox();
             this.txtCidadeLeitor = new System.Windows.Forms.TextBox();
             this.txtBairroLeitor = new System.Windows.Forms.TextBox();
             this.txtEnderecoLeitor = new System.Windows.Forms.TextBox();
@@ -55,13 +54,6 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dtgDadosLeitor = new System.Windows.Forms.DataGridView();
-            this.txtDtNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.txtCpfLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtRgLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtEmailleitor = new System.Windows.Forms.TextBox();
-            this.txtTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtCelularLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtCepLeitor = new System.Windows.Forms.MaskedTextBox();
             this.colCodigoLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNomeLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCpfLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,6 +69,14 @@
             this.colCepLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colUfLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colNumeroLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.txtDtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.txtCpfLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtRgLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmailleitor = new System.Windows.Forms.TextBox();
+            this.txtTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtCelularLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtCepLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.cbxSexoLeitor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDadosLeitor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -232,14 +232,6 @@
             this.txtNomeLeitor.Size = new System.Drawing.Size(787, 26);
             this.txtNomeLeitor.TabIndex = 18;
             // 
-            // txtSexoLeitor
-            // 
-            this.txtSexoLeitor.Location = new System.Drawing.Point(156, 72);
-            this.txtSexoLeitor.MaxLength = 1;
-            this.txtSexoLeitor.Name = "txtSexoLeitor";
-            this.txtSexoLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtSexoLeitor.TabIndex = 19;
-            // 
             // txtCidadeLeitor
             // 
             this.txtCidadeLeitor.Location = new System.Drawing.Point(156, 362);
@@ -336,63 +328,6 @@
             this.dtgDadosLeitor.Size = new System.Drawing.Size(927, 323);
             this.dtgDadosLeitor.TabIndex = 34;
             this.dtgDadosLeitor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDadosLeitor_CellDoubleClick);
-            // 
-            // txtDtNascimento
-            // 
-            this.txtDtNascimento.Location = new System.Drawing.Point(156, 105);
-            this.txtDtNascimento.Mask = "00/00/0000";
-            this.txtDtNascimento.Name = "txtDtNascimento";
-            this.txtDtNascimento.Size = new System.Drawing.Size(296, 26);
-            this.txtDtNascimento.TabIndex = 35;
-            this.txtDtNascimento.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtCpfLeitor
-            // 
-            this.txtCpfLeitor.Location = new System.Drawing.Point(156, 137);
-            this.txtCpfLeitor.Mask = "000.000.000-00";
-            this.txtCpfLeitor.Name = "txtCpfLeitor";
-            this.txtCpfLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtCpfLeitor.TabIndex = 36;
-            // 
-            // txtRgLeitor
-            // 
-            this.txtRgLeitor.Location = new System.Drawing.Point(156, 169);
-            this.txtRgLeitor.Mask = "00.000.000-0";
-            this.txtRgLeitor.Name = "txtRgLeitor";
-            this.txtRgLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtRgLeitor.TabIndex = 37;
-            // 
-            // txtEmailleitor
-            // 
-            this.txtEmailleitor.Location = new System.Drawing.Point(156, 202);
-            this.txtEmailleitor.MaxLength = 200;
-            this.txtEmailleitor.Name = "txtEmailleitor";
-            this.txtEmailleitor.Size = new System.Drawing.Size(787, 26);
-            this.txtEmailleitor.TabIndex = 38;
-            // 
-            // txtTelefoneLeitor
-            // 
-            this.txtTelefoneLeitor.Location = new System.Drawing.Point(156, 232);
-            this.txtTelefoneLeitor.Mask = "(00) 0000-0000";
-            this.txtTelefoneLeitor.Name = "txtTelefoneLeitor";
-            this.txtTelefoneLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtTelefoneLeitor.TabIndex = 39;
-            // 
-            // txtCelularLeitor
-            // 
-            this.txtCelularLeitor.Location = new System.Drawing.Point(156, 265);
-            this.txtCelularLeitor.Mask = "(00) 00000-0000";
-            this.txtCelularLeitor.Name = "txtCelularLeitor";
-            this.txtCelularLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtCelularLeitor.TabIndex = 40;
-            // 
-            // txtCepLeitor
-            // 
-            this.txtCepLeitor.Location = new System.Drawing.Point(156, 392);
-            this.txtCepLeitor.Mask = "00000-000";
-            this.txtCepLeitor.Name = "txtCepLeitor";
-            this.txtCepLeitor.Size = new System.Drawing.Size(296, 26);
-            this.txtCepLeitor.TabIndex = 41;
             // 
             // colCodigoLeitor
             // 
@@ -511,12 +446,80 @@
             this.colNumeroLeitor.ReadOnly = true;
             this.colNumeroLeitor.Visible = false;
             // 
+            // txtDtNascimento
+            // 
+            this.txtDtNascimento.Location = new System.Drawing.Point(156, 105);
+            this.txtDtNascimento.Mask = "00/00/0000";
+            this.txtDtNascimento.Name = "txtDtNascimento";
+            this.txtDtNascimento.Size = new System.Drawing.Size(296, 26);
+            this.txtDtNascimento.TabIndex = 35;
+            this.txtDtNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtCpfLeitor
+            // 
+            this.txtCpfLeitor.Location = new System.Drawing.Point(156, 137);
+            this.txtCpfLeitor.Mask = "000.000.000-00";
+            this.txtCpfLeitor.Name = "txtCpfLeitor";
+            this.txtCpfLeitor.Size = new System.Drawing.Size(296, 26);
+            this.txtCpfLeitor.TabIndex = 36;
+            // 
+            // txtRgLeitor
+            // 
+            this.txtRgLeitor.Location = new System.Drawing.Point(156, 169);
+            this.txtRgLeitor.Mask = "00.000.000-0";
+            this.txtRgLeitor.Name = "txtRgLeitor";
+            this.txtRgLeitor.Size = new System.Drawing.Size(296, 26);
+            this.txtRgLeitor.TabIndex = 37;
+            // 
+            // txtEmailleitor
+            // 
+            this.txtEmailleitor.Location = new System.Drawing.Point(156, 202);
+            this.txtEmailleitor.MaxLength = 200;
+            this.txtEmailleitor.Name = "txtEmailleitor";
+            this.txtEmailleitor.Size = new System.Drawing.Size(787, 26);
+            this.txtEmailleitor.TabIndex = 38;
+            // 
+            // txtTelefoneLeitor
+            // 
+            this.txtTelefoneLeitor.Location = new System.Drawing.Point(156, 232);
+            this.txtTelefoneLeitor.Mask = "(00) 0000-0000";
+            this.txtTelefoneLeitor.Name = "txtTelefoneLeitor";
+            this.txtTelefoneLeitor.Size = new System.Drawing.Size(296, 26);
+            this.txtTelefoneLeitor.TabIndex = 39;
+            // 
+            // txtCelularLeitor
+            // 
+            this.txtCelularLeitor.Location = new System.Drawing.Point(156, 265);
+            this.txtCelularLeitor.Mask = "(00) 00000-0000";
+            this.txtCelularLeitor.Name = "txtCelularLeitor";
+            this.txtCelularLeitor.Size = new System.Drawing.Size(296, 26);
+            this.txtCelularLeitor.TabIndex = 40;
+            // 
+            // txtCepLeitor
+            // 
+            this.txtCepLeitor.Location = new System.Drawing.Point(156, 392);
+            this.txtCepLeitor.Mask = "00000-000";
+            this.txtCepLeitor.Name = "txtCepLeitor";
+            this.txtCepLeitor.Size = new System.Drawing.Size(296, 26);
+            this.txtCepLeitor.TabIndex = 41;
+            // 
+            // cbxSexoLeitor
+            // 
+            this.cbxSexoLeitor.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cbxSexoLeitor.Location = new System.Drawing.Point(156, 72);
+            this.cbxSexoLeitor.Name = "cbxSexoLeitor";
+            this.cbxSexoLeitor.Size = new System.Drawing.Size(296, 28);
+            this.cbxSexoLeitor.TabIndex = 0;
+            // 
             // FormCadLeitor
             // 
             this.AcceptButton = this.btnSalvar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 864);
+            this.Controls.Add(this.cbxSexoLeitor);
             this.Controls.Add(this.txtCepLeitor);
             this.Controls.Add(this.txtCelularLeitor);
             this.Controls.Add(this.txtTelefoneLeitor);
@@ -532,7 +535,6 @@
             this.Controls.Add(this.txtCidadeLeitor);
             this.Controls.Add(this.txtBairroLeitor);
             this.Controls.Add(this.txtEnderecoLeitor);
-            this.Controls.Add(this.txtSexoLeitor);
             this.Controls.Add(this.txtNomeLeitor);
             this.Controls.Add(this.txtCodLeitor);
             this.Controls.Add(this.lblUfLeitor);
@@ -580,7 +582,6 @@
         private System.Windows.Forms.Label lblUfLeitor;
         private System.Windows.Forms.TextBox txtCodLeitor;
         private System.Windows.Forms.TextBox txtNomeLeitor;
-        private System.Windows.Forms.TextBox txtSexoLeitor;
         private System.Windows.Forms.TextBox txtCidadeLeitor;
         private System.Windows.Forms.TextBox txtBairroLeitor;
         private System.Windows.Forms.TextBox txtEnderecoLeitor;
@@ -611,6 +612,7 @@
         private System.Windows.Forms.DataGridViewLinkColumn colCepLeitor;
         private System.Windows.Forms.DataGridViewLinkColumn colUfLeitor;
         private System.Windows.Forms.DataGridViewLinkColumn colNumeroLeitor;
+        private System.Windows.Forms.ComboBox cbxSexoLeitor;
     }
 }
 

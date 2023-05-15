@@ -45,7 +45,7 @@ namespace CadastroLeitor
                     bool verificaCampos = dao.VerificaCampos(new LeitorModel()
                     {
                         NomeLeitor = txtNomeLeitor.Text,
-                        Sexo = txtSexoLeitor.Text,
+                        Sexo = cbxSexoLeitor.Text,
                         DataNascimento = txtDtNascimento.Text,
                         Endereco = txtEnderecoLeitor.Text,
                         EnderecoBairro = txtBairroLeitor.Text,
@@ -71,7 +71,7 @@ namespace CadastroLeitor
                             {
                                 CodLeitor = txtCodLeitor.Text,
                                 NomeLeitor = txtNomeLeitor.Text,
-                                Sexo = txtSexoLeitor.Text,
+                                Sexo = cbxSexoLeitor.Text,
                                 DataNascimento = txtDtNascimento.Text,
                                 Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
                                 Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
@@ -93,7 +93,7 @@ namespace CadastroLeitor
                             dao.Salvar(new LeitorModel()
                             {
                                 NomeLeitor = txtNomeLeitor.Text,
-                                Sexo = txtSexoLeitor.Text,
+                                Sexo = cbxSexoLeitor.Text,
                                 DataNascimento = txtDtNascimento.Text,
                                 Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
                                 Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
@@ -161,7 +161,7 @@ namespace CadastroLeitor
         {
             txtCodLeitor.Text = String.Empty;
             txtNomeLeitor.Text = String.Empty;
-            txtSexoLeitor.Text = String.Empty;
+            cbxSexoLeitor.Text = String.Empty;
             txtDtNascimento.Text = String.Empty;
             txtCpfLeitor.Text = String.Empty;
             txtRgLeitor.Text = String.Empty;
@@ -223,7 +223,7 @@ namespace CadastroLeitor
                 txtCodLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCodigoLeitor.Index].Value + "";
                 txtNomeLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colNomeLeitor.Index].Value + "";
                 txtCpfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCpfLeitor.Index].Value + "";
-                txtSexoLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colSexoLeitor.Index].Value + "";
+                cbxSexoLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colSexoLeitor.Index].Value + "";
                 txtDtNascimento.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colDtNascimentoLeitor.Index].Value + "";
                 txtRgLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colRgLeitor.Index].Value + "";
                 txtEmailleitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colEmailLeitor.Index].Value + "";
