@@ -39,7 +39,7 @@ namespace CadastroLeitor
                         Endereco = txtEnderecoLeitor.Text,
                         EnderecoBairro = txtBairroLeitor.Text,
                         EnderecoCidade = txtCidadeLeitor.Text,
-                        EnderecoUf = txtUfLeitor.Text
+                        EnderecoUf = cbxUfLeitor.Text
                     });
 
                     bool verificaEmail = dao.IsValidEmail(new LeitorModel()
@@ -71,7 +71,7 @@ namespace CadastroLeitor
                                 EnderecoBairro = txtBairroLeitor.Text,
                                 EnderecoCidade = txtCidadeLeitor.Text,
                                 EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
-                                EnderecoUf = txtUfLeitor.Text,
+                                EnderecoUf = cbxUfLeitor.Text,
                                 EnderecoNumero = txtNumeroLeitor.Text,
                             });
                             MessageBox.Show("leitor Atualizada com sucesso!");
@@ -93,7 +93,7 @@ namespace CadastroLeitor
                                 EnderecoBairro = txtBairroLeitor.Text,
                                 EnderecoCidade = txtCidadeLeitor.Text,
                                 EnderecoCep = txtCepLeitor.Text.Replace("-", ""),
-                                EnderecoUf = txtUfLeitor.Text,
+                                EnderecoUf = cbxUfLeitor.Text,
                                 EnderecoNumero = txtNumeroLeitor.Text,
                             });
                             MessageBox.Show("leitor salva com sucesso!");
@@ -150,7 +150,7 @@ namespace CadastroLeitor
         {
             txtCodLeitor.Text = String.Empty;
             txtNomeLeitor.Text = String.Empty;
-            cbxSexoLeitor.Text = String.Empty;
+            cbxSexoLeitor.SelectedIndex = -1;
             txtDtNascimento.Text = String.Empty;
             txtCpfLeitor.Text = String.Empty;
             txtRgLeitor.Text = String.Empty;
@@ -161,7 +161,7 @@ namespace CadastroLeitor
             txtBairroLeitor.Text = String.Empty;
             txtCidadeLeitor.Text = String.Empty;    
             txtCepLeitor.Text = String.Empty;
-            txtUfLeitor.Text = String.Empty;
+            cbxUfLeitor.SelectedIndex = -1;
             txtNumeroLeitor.Text = String.Empty;
         }
 
@@ -222,7 +222,7 @@ namespace CadastroLeitor
                 txtBairroLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colBairroLeitor.Index].Value + "";
                 txtCidadeLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCidadeLeitor.Index].Value + "";
                 txtCepLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCepLeitor.Index].Value + "";
-                txtUfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colUfLeitor.Index].Value + "";
+                cbxUfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colUfLeitor.Index].Value + "";
                 txtNumeroLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colNumeroLeitor.Index].Value + "";
                 if (string.IsNullOrEmpty(this.txtNomeLeitor.Text))
                 {
