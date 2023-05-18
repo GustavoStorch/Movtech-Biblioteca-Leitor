@@ -231,6 +231,8 @@
             // 
             // txtNomeLeitor
             // 
+            this.txtNomeLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNomeLeitor.Location = new System.Drawing.Point(290, 28);
             this.txtNomeLeitor.MaxLength = 200;
             this.txtNomeLeitor.Name = "txtNomeLeitor";
@@ -247,6 +249,8 @@
             // 
             // txtBairroLeitor
             // 
+            this.txtBairroLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBairroLeitor.Location = new System.Drawing.Point(613, 25);
             this.txtBairroLeitor.MaxLength = 100;
             this.txtBairroLeitor.Name = "txtBairroLeitor";
@@ -271,6 +275,7 @@
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalvar.Location = new System.Drawing.Point(824, 254);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 34);
@@ -281,6 +286,7 @@
             // 
             // btnExcluir
             // 
+            this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluir.Location = new System.Drawing.Point(947, 254);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(116, 34);
@@ -293,6 +299,9 @@
             // 
             this.dtgDadosLeitor.AllowUserToAddRows = false;
             this.dtgDadosLeitor.AllowUserToDeleteRows = false;
+            this.dtgDadosLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgDadosLeitor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgDadosLeitor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDadosLeitor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -465,6 +474,8 @@
             // 
             // txtEmailleitor
             // 
+            this.txtEmailleitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmailleitor.Location = new System.Drawing.Point(290, 61);
             this.txtEmailleitor.MaxLength = 200;
             this.txtEmailleitor.Name = "txtEmailleitor";
@@ -508,6 +519,8 @@
             // 
             // gpxDadosLeitor
             // 
+            this.gpxDadosLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpxDadosLeitor.Controls.Add(this.lblCodLeitor);
             this.gpxDadosLeitor.Controls.Add(this.cbxSexoLeitor);
             this.gpxDadosLeitor.Controls.Add(this.txtCelularLeitor);
@@ -535,6 +548,8 @@
             // 
             // gpxEnderecoLeitor
             // 
+            this.gpxEnderecoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpxEnderecoLeitor.Controls.Add(this.cbxUfLeitor);
             this.gpxEnderecoLeitor.Controls.Add(this.lblEnderecoLeitor);
             this.gpxEnderecoLeitor.Controls.Add(this.txtEnderecoLeitor);
@@ -552,7 +567,7 @@
             this.gpxEnderecoLeitor.Size = new System.Drawing.Size(1051, 98);
             this.gpxEnderecoLeitor.TabIndex = 43;
             this.gpxEnderecoLeitor.TabStop = false;
-            this.gpxEnderecoLeitor.Text = "Endereço";
+            this.gpxEnderecoLeitor.Text = "Endereço Pessoal";
             // 
             // cbxUfLeitor
             // 
