@@ -35,7 +35,7 @@ namespace CadastroLeitor
                     {
                         NomeLeitor = txtNomeLeitor.Text,
                         Sexo = cbxSexoLeitor.Text,
-                        DataNascimento = txtDtNascimento.Text,
+                        DataNascimento = dtpDataNascimento.Value.Date.ToString(),
                         Endereco = txtEnderecoLeitor.Text,
                         EnderecoBairro = txtBairroLeitor.Text,
                         EnderecoCidade = txtCidadeLeitor.Text,
@@ -61,8 +61,8 @@ namespace CadastroLeitor
                                 CodLeitor = txtCodLeitor.Text,
                                 NomeLeitor = txtNomeLeitor.Text,
                                 Sexo = cbxSexoLeitor.Text,
-                                DataNascimento = txtDtNascimento.Text,
-                                Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                                DataNascimento = dtpDataNascimento.Value.Date.ToString(),
+                                Cpf = txtCpfLeitor.Text,
                                 Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
                                 Email = txtEmailleitor.Text,
                                 Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace("-", "").Replace(" ", ""),
@@ -83,8 +83,8 @@ namespace CadastroLeitor
                             {
                                 NomeLeitor = txtNomeLeitor.Text,
                                 Sexo = cbxSexoLeitor.Text,
-                                DataNascimento = txtDtNascimento.Text,
-                                Cpf = txtCpfLeitor.Text.Replace(",", "").Replace("-", ""),
+                                DataNascimento = dtpDataNascimento.Value.Date.ToString(),
+                                Cpf = txtCpfLeitor.Text,
                                 Rg = txtRgLeitor.Text.Replace(",", "").Replace("-", ""),
                                 Email = txtEmailleitor.Text,
                                 Telefone = txtTelefoneLeitor.Text.Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", ""),
@@ -151,7 +151,7 @@ namespace CadastroLeitor
             txtCodLeitor.Text = String.Empty;
             txtNomeLeitor.Text = String.Empty;
             cbxSexoLeitor.SelectedIndex = -1;
-            txtDtNascimento.Text = String.Empty;
+            dtpDataNascimento.Text = String.Empty;
             txtCpfLeitor.Text = String.Empty;
             txtRgLeitor.Text = String.Empty;
             txtEmailleitor.Text = String.Empty;
@@ -177,7 +177,7 @@ namespace CadastroLeitor
                     DataGridViewRow row = dtgDadosLeitor.Rows[dtgDadosLeitor.Rows.Add()];
                     row.Cells[colCodigoLeitor.Index].Value = leitor.CodLeitor;
                     row.Cells[colNomeLeitor.Index].Value = leitor.NomeLeitor;
-                    row.Cells[colCpfLeitor.Index].Value = leitor.Cpf;
+                    row.Cells[colCpfLeitor.Index].Value = leitor.Cpf.Replace(",", ".");
                     row.Cells[colSexoLeitor.Index].Value = leitor.Sexo;
                     row.Cells[colDtNascimentoLeitor.Index].Value = leitor.DataNascimento;
                     row.Cells[colRgLeitor.Index].Value = leitor.Rg;
@@ -213,7 +213,7 @@ namespace CadastroLeitor
                 txtNomeLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colNomeLeitor.Index].Value + "";
                 txtCpfLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colCpfLeitor.Index].Value + "";
                 cbxSexoLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colSexoLeitor.Index].Value + "";
-                txtDtNascimento.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colDtNascimentoLeitor.Index].Value + "";
+                dtpDataNascimento.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colDtNascimentoLeitor.Index].Value + "";
                 txtRgLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colRgLeitor.Index].Value + "";
                 txtEmailleitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colEmailLeitor.Index].Value + "";
                 txtTelefoneLeitor.Text = dtgDadosLeitor.Rows[e.RowIndex].Cells[colTelefoneLeitor.Index].Value + "";
