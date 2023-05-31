@@ -22,6 +22,7 @@ namespace CadastroLeitor
         {
             InitializeTable();
             CarregaID();
+            btnExcluir.Enabled = false;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
