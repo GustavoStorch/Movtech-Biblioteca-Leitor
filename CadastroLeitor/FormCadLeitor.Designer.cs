@@ -54,18 +54,6 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dtgDadosLeitor = new System.Windows.Forms.DataGridView();
-            this.txtCpfLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtRgLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtEmailleitor = new System.Windows.Forms.TextBox();
-            this.txtTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtCelularLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.txtCepLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.cbxSexoLeitor = new System.Windows.Forms.ComboBox();
-            this.gpxDadosLeitor = new System.Windows.Forms.GroupBox();
-            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.gpxEnderecoLeitor = new System.Windows.Forms.GroupBox();
-            this.cbxUfLeitor = new System.Windows.Forms.ComboBox();
             this.colCodigoLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNomeLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCpfLeitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,6 +69,18 @@
             this.colCepLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colUfLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
             this.colNumeroLeitor = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.txtCpfLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtRgLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtEmailleitor = new System.Windows.Forms.TextBox();
+            this.txtTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtCelularLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtCepLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.cbxSexoLeitor = new System.Windows.Forms.ComboBox();
+            this.gpxDadosLeitor = new System.Windows.Forms.GroupBox();
+            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.gpxEnderecoLeitor = new System.Windows.Forms.GroupBox();
+            this.cbxUfLeitor = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDadosLeitor)).BeginInit();
             this.gpxDadosLeitor.SuspendLayout();
             this.gpxEnderecoLeitor.SuspendLayout();
@@ -107,7 +107,7 @@
             // lblDtNascimentoLeitor
             // 
             this.lblDtNascimentoLeitor.AutoSize = true;
-            this.lblDtNascimentoLeitor.Location = new System.Drawing.Point(609, 110);
+            this.lblDtNascimentoLeitor.Location = new System.Drawing.Point(628, 107);
             this.lblDtNascimentoLeitor.Name = "lblDtNascimentoLeitor";
             this.lblDtNascimentoLeitor.Size = new System.Drawing.Size(136, 20);
             this.lblDtNascimentoLeitor.TabIndex = 3;
@@ -117,7 +117,7 @@
             // 
             this.lblSexoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSexoLeitor.AutoSize = true;
-            this.lblSexoLeitor.Location = new System.Drawing.Point(989, 72);
+            this.lblSexoLeitor.Location = new System.Drawing.Point(715, 72);
             this.lblSexoLeitor.Name = "lblSexoLeitor";
             this.lblSexoLeitor.Size = new System.Drawing.Size(49, 20);
             this.lblSexoLeitor.TabIndex = 2;
@@ -189,7 +189,7 @@
             // lblBairroLeitor
             // 
             this.lblBairroLeitor.AutoSize = true;
-            this.lblBairroLeitor.Location = new System.Drawing.Point(658, 28);
+            this.lblBairroLeitor.Location = new System.Drawing.Point(483, 28);
             this.lblBairroLeitor.Name = "lblBairroLeitor";
             this.lblBairroLeitor.Size = new System.Drawing.Size(55, 20);
             this.lblBairroLeitor.TabIndex = 10;
@@ -198,7 +198,7 @@
             // lblCepLeitor
             // 
             this.lblCepLeitor.AutoSize = true;
-            this.lblCepLeitor.Location = new System.Drawing.Point(658, 65);
+            this.lblCepLeitor.Location = new System.Drawing.Point(483, 68);
             this.lblCepLeitor.Name = "lblCepLeitor";
             this.lblCepLeitor.Size = new System.Drawing.Size(45, 20);
             this.lblCepLeitor.TabIndex = 12;
@@ -207,7 +207,7 @@
             // lblNumeroLeitor
             // 
             this.lblNumeroLeitor.AutoSize = true;
-            this.lblNumeroLeitor.Location = new System.Drawing.Point(935, 65);
+            this.lblNumeroLeitor.Location = new System.Drawing.Point(760, 68);
             this.lblNumeroLeitor.Name = "lblNumeroLeitor";
             this.lblNumeroLeitor.Size = new System.Drawing.Size(69, 20);
             this.lblNumeroLeitor.TabIndex = 15;
@@ -216,7 +216,7 @@
             // lblUfLeitor
             // 
             this.lblUfLeitor.AutoSize = true;
-            this.lblUfLeitor.Location = new System.Drawing.Point(811, 65);
+            this.lblUfLeitor.Location = new System.Drawing.Point(636, 68);
             this.lblUfLeitor.Name = "lblUfLeitor";
             this.lblUfLeitor.Size = new System.Drawing.Size(35, 20);
             this.lblUfLeitor.TabIndex = 16;
@@ -226,7 +226,7 @@
             // 
             this.txtCodLeitor.Enabled = false;
             this.txtCodLeitor.Location = new System.Drawing.Point(75, 28);
-            this.txtCodLeitor.MaxLength = 3;
+            this.txtCodLeitor.MaxLength = 4;
             this.txtCodLeitor.Name = "txtCodLeitor";
             this.txtCodLeitor.Size = new System.Drawing.Size(123, 26);
             this.txtCodLeitor.TabIndex = 1;
@@ -238,7 +238,7 @@
             this.txtNomeLeitor.Location = new System.Drawing.Point(269, 29);
             this.txtNomeLeitor.MaxLength = 200;
             this.txtNomeLeitor.Name = "txtNomeLeitor";
-            this.txtNomeLeitor.Size = new System.Drawing.Size(880, 26);
+            this.txtNomeLeitor.Size = new System.Drawing.Size(642, 26);
             this.txtNomeLeitor.TabIndex = 2;
             // 
             // txtCidadeLeitor
@@ -246,17 +246,17 @@
             this.txtCidadeLeitor.Location = new System.Drawing.Point(94, 65);
             this.txtCidadeLeitor.MaxLength = 100;
             this.txtCidadeLeitor.Name = "txtCidadeLeitor";
-            this.txtCidadeLeitor.Size = new System.Drawing.Size(558, 26);
+            this.txtCidadeLeitor.Size = new System.Drawing.Size(383, 26);
             this.txtCidadeLeitor.TabIndex = 12;
             // 
             // txtBairroLeitor
             // 
             this.txtBairroLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBairroLeitor.Location = new System.Drawing.Point(719, 25);
+            this.txtBairroLeitor.Location = new System.Drawing.Point(544, 25);
             this.txtBairroLeitor.MaxLength = 100;
             this.txtBairroLeitor.Name = "txtBairroLeitor";
-            this.txtBairroLeitor.Size = new System.Drawing.Size(430, 26);
+            this.txtBairroLeitor.Size = new System.Drawing.Size(367, 26);
             this.txtBairroLeitor.TabIndex = 11;
             // 
             // txtEnderecoLeitor
@@ -264,21 +264,21 @@
             this.txtEnderecoLeitor.Location = new System.Drawing.Point(94, 25);
             this.txtEnderecoLeitor.MaxLength = 200;
             this.txtEnderecoLeitor.Name = "txtEnderecoLeitor";
-            this.txtEnderecoLeitor.Size = new System.Drawing.Size(558, 26);
+            this.txtEnderecoLeitor.Size = new System.Drawing.Size(383, 26);
             this.txtEnderecoLeitor.TabIndex = 10;
             // 
             // txtNumeroLeitor
             // 
-            this.txtNumeroLeitor.Location = new System.Drawing.Point(1010, 62);
+            this.txtNumeroLeitor.Location = new System.Drawing.Point(835, 65);
             this.txtNumeroLeitor.MaxLength = 10;
             this.txtNumeroLeitor.Name = "txtNumeroLeitor";
-            this.txtNumeroLeitor.Size = new System.Drawing.Size(139, 26);
+            this.txtNumeroLeitor.Size = new System.Drawing.Size(76, 26);
             this.txtNumeroLeitor.TabIndex = 15;
             // 
             // btnSalvar
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvar.Location = new System.Drawing.Point(930, 269);
+            this.btnSalvar.Location = new System.Drawing.Point(693, 269);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(116, 34);
             this.btnSalvar.TabIndex = 16;
@@ -289,7 +289,7 @@
             // btnExcluir
             // 
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcluir.Location = new System.Drawing.Point(1053, 269);
+            this.btnExcluir.Location = new System.Drawing.Point(816, 269);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(116, 34);
             this.btnExcluir.TabIndex = 17;
@@ -328,168 +328,9 @@
             this.dtgDadosLeitor.RowHeadersWidth = 62;
             this.dtgDadosLeitor.RowTemplate.Height = 28;
             this.dtgDadosLeitor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgDadosLeitor.Size = new System.Drawing.Size(1157, 346);
+            this.dtgDadosLeitor.Size = new System.Drawing.Size(920, 346);
             this.dtgDadosLeitor.TabIndex = 18;
             this.dtgDadosLeitor.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDadosLeitor_CellDoubleClick);
-            // 
-            // txtCpfLeitor
-            // 
-            this.txtCpfLeitor.Location = new System.Drawing.Point(75, 69);
-            this.txtCpfLeitor.Mask = "000.000.000-00";
-            this.txtCpfLeitor.Name = "txtCpfLeitor";
-            this.txtCpfLeitor.Size = new System.Drawing.Size(123, 26);
-            this.txtCpfLeitor.TabIndex = 3;
-            // 
-            // txtRgLeitor
-            // 
-            this.txtRgLeitor.Location = new System.Drawing.Point(75, 107);
-            this.txtRgLeitor.Mask = "0.000.000";
-            this.txtRgLeitor.Name = "txtRgLeitor";
-            this.txtRgLeitor.Size = new System.Drawing.Size(123, 26);
-            this.txtRgLeitor.TabIndex = 6;
-            // 
-            // txtEmailleitor
-            // 
-            this.txtEmailleitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmailleitor.Location = new System.Drawing.Point(269, 69);
-            this.txtEmailleitor.MaxLength = 200;
-            this.txtEmailleitor.Name = "txtEmailleitor";
-            this.txtEmailleitor.Size = new System.Drawing.Size(714, 26);
-            this.txtEmailleitor.TabIndex = 4;
-            // 
-            // txtTelefoneLeitor
-            // 
-            this.txtTelefoneLeitor.Location = new System.Drawing.Point(483, 107);
-            this.txtTelefoneLeitor.Mask = "(00) 0000-0000";
-            this.txtTelefoneLeitor.Name = "txtTelefoneLeitor";
-            this.txtTelefoneLeitor.Size = new System.Drawing.Size(120, 26);
-            this.txtTelefoneLeitor.TabIndex = 8;
-            // 
-            // txtCelularLeitor
-            // 
-            this.txtCelularLeitor.Location = new System.Drawing.Point(269, 107);
-            this.txtCelularLeitor.Mask = "(00) 00000-0000";
-            this.txtCelularLeitor.Name = "txtCelularLeitor";
-            this.txtCelularLeitor.Size = new System.Drawing.Size(127, 26);
-            this.txtCelularLeitor.TabIndex = 7;
-            // 
-            // txtCepLeitor
-            // 
-            this.txtCepLeitor.Location = new System.Drawing.Point(719, 62);
-            this.txtCepLeitor.Mask = "00000-000";
-            this.txtCepLeitor.Name = "txtCepLeitor";
-            this.txtCepLeitor.Size = new System.Drawing.Size(86, 26);
-            this.txtCepLeitor.TabIndex = 13;
-            // 
-            // cbxSexoLeitor
-            // 
-            this.cbxSexoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxSexoLeitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxSexoLeitor.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.cbxSexoLeitor.Location = new System.Drawing.Point(1044, 67);
-            this.cbxSexoLeitor.Name = "cbxSexoLeitor";
-            this.cbxSexoLeitor.Size = new System.Drawing.Size(105, 28);
-            this.cbxSexoLeitor.TabIndex = 5;
-            // 
-            // gpxDadosLeitor
-            // 
-            this.gpxDadosLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpxDadosLeitor.Controls.Add(this.dtpDataNascimento);
-            this.gpxDadosLeitor.Controls.Add(this.lblCodLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.cbxSexoLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtCelularLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtCodLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtTelefoneLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblNomeLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblDtNascimentoLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblSexoLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtRgLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtEmailleitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtCpfLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.txtNomeLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblRgLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblEmailLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblCpfLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblTelefoneLeitor);
-            this.gpxDadosLeitor.Controls.Add(this.lblCelularLeitor);
-            this.gpxDadosLeitor.Location = new System.Drawing.Point(12, 12);
-            this.gpxDadosLeitor.Name = "gpxDadosLeitor";
-            this.gpxDadosLeitor.Size = new System.Drawing.Size(1157, 145);
-            this.gpxDadosLeitor.TabIndex = 42;
-            this.gpxDadosLeitor.TabStop = false;
-            this.gpxDadosLeitor.Text = "Dados Pessoais";
-            // 
-            // dtpDataNascimento
-            // 
-            this.dtpDataNascimento.Location = new System.Drawing.Point(751, 107);
-            this.dtpDataNascimento.Name = "dtpDataNascimento";
-            this.dtpDataNascimento.Size = new System.Drawing.Size(398, 26);
-            this.dtpDataNascimento.TabIndex = 9;
-            this.dtpDataNascimento.Value = new System.DateTime(2023, 5, 22, 8, 19, 54, 0);
-            // 
-            // gpxEnderecoLeitor
-            // 
-            this.gpxEnderecoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpxEnderecoLeitor.Controls.Add(this.cbxUfLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblEnderecoLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.txtEnderecoLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.txtCepLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblBairroLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.txtBairroLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.txtNumeroLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblCidadeLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblNumeroLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.txtCidadeLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblUfLeitor);
-            this.gpxEnderecoLeitor.Controls.Add(this.lblCepLeitor);
-            this.gpxEnderecoLeitor.Location = new System.Drawing.Point(12, 163);
-            this.gpxEnderecoLeitor.Name = "gpxEnderecoLeitor";
-            this.gpxEnderecoLeitor.Size = new System.Drawing.Size(1157, 100);
-            this.gpxEnderecoLeitor.TabIndex = 43;
-            this.gpxEnderecoLeitor.TabStop = false;
-            this.gpxEnderecoLeitor.Text = "Endereço Pessoal";
-            // 
-            // cbxUfLeitor
-            // 
-            this.cbxUfLeitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxUfLeitor.FormattingEnabled = true;
-            this.cbxUfLeitor.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "ES",
-            "GO",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SC",
-            "SP",
-            "SE",
-            "TO"});
-            this.cbxUfLeitor.Location = new System.Drawing.Point(852, 60);
-            this.cbxUfLeitor.Name = "cbxUfLeitor";
-            this.cbxUfLeitor.Size = new System.Drawing.Size(77, 28);
-            this.cbxUfLeitor.TabIndex = 14;
             // 
             // colCodigoLeitor
             // 
@@ -610,12 +451,175 @@
             this.colNumeroLeitor.ReadOnly = true;
             this.colNumeroLeitor.Visible = false;
             // 
+            // txtCpfLeitor
+            // 
+            this.txtCpfLeitor.Location = new System.Drawing.Point(75, 69);
+            this.txtCpfLeitor.Mask = "000.000.000-00";
+            this.txtCpfLeitor.Name = "txtCpfLeitor";
+            this.txtCpfLeitor.Size = new System.Drawing.Size(123, 26);
+            this.txtCpfLeitor.TabIndex = 3;
+            // 
+            // txtRgLeitor
+            // 
+            this.txtRgLeitor.Location = new System.Drawing.Point(75, 107);
+            this.txtRgLeitor.Mask = "0.000.000";
+            this.txtRgLeitor.Name = "txtRgLeitor";
+            this.txtRgLeitor.Size = new System.Drawing.Size(123, 26);
+            this.txtRgLeitor.TabIndex = 6;
+            // 
+            // txtEmailleitor
+            // 
+            this.txtEmailleitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmailleitor.Location = new System.Drawing.Point(269, 69);
+            this.txtEmailleitor.MaxLength = 200;
+            this.txtEmailleitor.Name = "txtEmailleitor";
+            this.txtEmailleitor.Size = new System.Drawing.Size(434, 26);
+            this.txtEmailleitor.TabIndex = 4;
+            // 
+            // txtTelefoneLeitor
+            // 
+            this.txtTelefoneLeitor.Location = new System.Drawing.Point(483, 107);
+            this.txtTelefoneLeitor.Mask = "(00) 0000-0000";
+            this.txtTelefoneLeitor.Name = "txtTelefoneLeitor";
+            this.txtTelefoneLeitor.Size = new System.Drawing.Size(120, 26);
+            this.txtTelefoneLeitor.TabIndex = 8;
+            // 
+            // txtCelularLeitor
+            // 
+            this.txtCelularLeitor.Location = new System.Drawing.Point(269, 107);
+            this.txtCelularLeitor.Mask = "(00) 00000-0000";
+            this.txtCelularLeitor.Name = "txtCelularLeitor";
+            this.txtCelularLeitor.Size = new System.Drawing.Size(127, 26);
+            this.txtCelularLeitor.TabIndex = 7;
+            // 
+            // txtCepLeitor
+            // 
+            this.txtCepLeitor.Location = new System.Drawing.Point(544, 65);
+            this.txtCepLeitor.Mask = "00000-000";
+            this.txtCepLeitor.Name = "txtCepLeitor";
+            this.txtCepLeitor.Size = new System.Drawing.Size(86, 26);
+            this.txtCepLeitor.TabIndex = 13;
+            // 
+            // cbxSexoLeitor
+            // 
+            this.cbxSexoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxSexoLeitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxSexoLeitor.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cbxSexoLeitor.Location = new System.Drawing.Point(770, 69);
+            this.cbxSexoLeitor.MaxLength = 1;
+            this.cbxSexoLeitor.Name = "cbxSexoLeitor";
+            this.cbxSexoLeitor.Size = new System.Drawing.Size(141, 28);
+            this.cbxSexoLeitor.TabIndex = 5;
+            // 
+            // gpxDadosLeitor
+            // 
+            this.gpxDadosLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpxDadosLeitor.Controls.Add(this.dtpDataNascimento);
+            this.gpxDadosLeitor.Controls.Add(this.lblCodLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.cbxSexoLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtCelularLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtCodLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtTelefoneLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblNomeLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblDtNascimentoLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblSexoLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtRgLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtEmailleitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtCpfLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.txtNomeLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblRgLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblEmailLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblCpfLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblTelefoneLeitor);
+            this.gpxDadosLeitor.Controls.Add(this.lblCelularLeitor);
+            this.gpxDadosLeitor.Location = new System.Drawing.Point(12, 12);
+            this.gpxDadosLeitor.Name = "gpxDadosLeitor";
+            this.gpxDadosLeitor.Size = new System.Drawing.Size(920, 145);
+            this.gpxDadosLeitor.TabIndex = 42;
+            this.gpxDadosLeitor.TabStop = false;
+            this.gpxDadosLeitor.Text = "Dados Pessoais";
+            // 
+            // dtpDataNascimento
+            // 
+            this.dtpDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataNascimento.Location = new System.Drawing.Point(770, 105);
+            this.dtpDataNascimento.Name = "dtpDataNascimento";
+            this.dtpDataNascimento.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpDataNascimento.Size = new System.Drawing.Size(141, 26);
+            this.dtpDataNascimento.TabIndex = 9;
+            this.dtpDataNascimento.Value = new System.DateTime(2023, 5, 22, 8, 19, 54, 0);
+            // 
+            // gpxEnderecoLeitor
+            // 
+            this.gpxEnderecoLeitor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gpxEnderecoLeitor.Controls.Add(this.cbxUfLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblEnderecoLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.txtEnderecoLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.txtCepLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblBairroLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.txtBairroLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.txtNumeroLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblCidadeLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblNumeroLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.txtCidadeLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblUfLeitor);
+            this.gpxEnderecoLeitor.Controls.Add(this.lblCepLeitor);
+            this.gpxEnderecoLeitor.Location = new System.Drawing.Point(12, 163);
+            this.gpxEnderecoLeitor.Name = "gpxEnderecoLeitor";
+            this.gpxEnderecoLeitor.Size = new System.Drawing.Size(920, 100);
+            this.gpxEnderecoLeitor.TabIndex = 43;
+            this.gpxEnderecoLeitor.TabStop = false;
+            this.gpxEnderecoLeitor.Text = "Endereço Pessoal";
+            // 
+            // cbxUfLeitor
+            // 
+            this.cbxUfLeitor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxUfLeitor.FormattingEnabled = true;
+            this.cbxUfLeitor.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
+            this.cbxUfLeitor.Location = new System.Drawing.Point(677, 63);
+            this.cbxUfLeitor.MaxLength = 2;
+            this.cbxUfLeitor.Name = "cbxUfLeitor";
+            this.cbxUfLeitor.Size = new System.Drawing.Size(77, 28);
+            this.cbxUfLeitor.TabIndex = 14;
+            // 
             // FormCadLeitor
             // 
             this.AcceptButton = this.btnSalvar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 662);
+            this.ClientSize = new System.Drawing.Size(944, 662);
             this.Controls.Add(this.gpxEnderecoLeitor);
             this.Controls.Add(this.gpxDadosLeitor);
             this.Controls.Add(this.dtgDadosLeitor);
